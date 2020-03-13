@@ -3,6 +3,7 @@ package com.galvanize.repository;
 import com.galvanize.entities.Person;
 import org.springframework.stereotype.Repository;
 
+import java.sql.Date;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,8 @@ public class PersonRepository {
     {
         people.add(new Person(nextId++, "Mark", "mark.hendrix@galvanize.com"));
         people.add(new Person(nextId++, "Mike", "mike.hudson@galvanize.com"));
-        people.add(new Person(nextId++, "Michael", "michael.wing@galvanize.com", LocalDate.of(1962, 11, 16)));
+        people.add(new Person(nextId++, "Krishna", "krishna.karki@xome.com"));
+        // people.add(new Person(nextId++, "Michael", "michael.wing@galvanize.com", Date.valueOf(LocalDate.of(1962, 11, 16)));
     }
 
     public Person save(Person person){
